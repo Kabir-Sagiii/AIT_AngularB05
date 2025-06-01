@@ -5,7 +5,7 @@
     <ol>
       @for(user of usersservice.users;track user;){
 
-      <li>{{ user }} <button (click)="removeUser(3)">Remove</button></li>
+      <li>{{ user }} <button (click)="removeUser($index)">Remove</button></li>
       <br />
 
       }
